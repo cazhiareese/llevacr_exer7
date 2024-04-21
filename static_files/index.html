@@ -1,24 +1,81 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title></title>
-    </head>
-    <body>
-        <h1 id="title">Games</h1>
-        <p>This is a list of games</p>
+	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 
-        <ol id="games-list">
-            <li class="game" id="hn">Hollow Knight</li>
-            <li class="game" id="mh">Monster Hunter</li>
-            <li class="game" id="o2">Overcooked 2</li>
-        </ol>
+	
+	<title>Exercise 7</title>
+	</head>
 
-        <button id="remove-game">Remove Game</button>
+	<body>
+		<nav class="navigation-bar">
+			
+			<a href="./index.html" id="fave-food">
+				<div class="navbar">
+					<h3>Favorite Food</h3>
+				</div>
+			</a>
+			<a href="./index.html" id="fave-songs">
+				<div class="navbar">
+					
+					<h3>Favorite Songs</h3>
+				</div>
+			</a>
 
-        <!--button id="remove-game">Remove Game</button-->
+			<a href="./index.html" id="fave-quotes">
+				<div class="navbar">
+					<h3>Favorite Quotes</h3>
+				</div>
+			</a>
+		</nav>
 
-        <!-- <script type="text/javascript" src="http://localhost:3000/index.js"></script> -->
-        <script type="text/javascript" src="./dom-script.js"></script>
-        <script type="text/javascript" src="./event-script.js"></script>
-    </body>
+		<div id="food-form-card">			
+			<div  id="food-form">
+			<h1>Add a Food Here!</h1>
+			<form id="form">
+				<label for="foodname">Add a Favorite Food:</label>
+				<input  required ="text" id="foodname" name="foodname">
+				 <br>
+				<label for="fooddescription">Add Description:</label>
+				<input required  type="text" id="fooddescription" name="fooddescription">
+				<br>
+				<label for="foodimage">Put Image URL Here:</label>
+				<input required type="text" id="foodimage" name="foodimage">
+				<br>				
+				<label for="foodrank">Where does it rank?:</label>
+				<input required type="number" id="foodrank" name="foodrank">
+
+				<button type="submit" id="submit-button">Submit</button>
+				<!-- <button type="submit" value="Submit"> -->
+			</form>
+			</div>
+
+			<div id="food-card-container" class="food-card-container">
+				<div class="food-card" style="order: 1;">
+					<img src="images/tortangtalong.jpg">
+					<h1>Tortang Talong</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+						ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+						laboris nisi ut aliquip ex ea commodo consequat. </p>
+					
+					<button> <i class="fa fa-trash"> </i></button>
+				</div>
+			</div>
+		</div>
+		
+		<div id="ads-section">
+			<h1>ADS</h1>
+			<img src="images/ads1.jpg" class="ads">
+			<img src="images/ads3.jpg" class="ads">
+			<img src="images/ads2.jpg" class="ads">
+		</div>
+
+		<script type="text/javascript" src="./form.js"></script>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		
+	</body>
 </html>

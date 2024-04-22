@@ -1,8 +1,4 @@
-
-
 const form = document.getElementById('form')
-
-
 
 const addCard = () =>{
     let card_container = document.getElementById('food-card-container');

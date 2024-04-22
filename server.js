@@ -1,8 +1,10 @@
 
 import express from 'express';
 
+// server configurations
 const app = express();
 
+//express serve static files
 app.use(express.static('static_files'))
 
 

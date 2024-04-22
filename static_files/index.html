@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html>
 	<head>
+
+		<!-- fonts and icons -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	
-	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		
+		<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 
 	
 	<title>Exercise 7</title>
 	</head>
 
 	<body>
+		<!-- Navigation bar -->
 		<nav class="navigation-bar">
 			
 			<a href="./index.html" id="fave-food">
@@ -33,7 +36,9 @@
 			</a>
 		</nav>
 
-		<div id="food-form-card">			
+		<!-- Food and Form div -->
+		<div id="food-form-card">
+		<!-- Form section  -->
 			<div  id="food-form">
 			<h1>Add a Food Here!</h1>
 			<form id="form">
@@ -50,10 +55,10 @@
 				<input required type="number" id="foodrank" name="foodrank">
 
 				<button type="submit" id="submit-button">Submit</button>
-				<!-- <button type="submit" value="Submit"> -->
 			</form>
 			</div>
 
+			<!-- food card section -->
 			<div id="food-card-container" class="food-card-container">
 				<!-- <div class="food-card" style="order: 1;">
 					<img src="images/tortangtalong.jpg">
@@ -67,6 +72,7 @@
 			</div>
 		</div>
 		
+		<!-- ads section -->
 		<div id="ads-section">
 			<h1>ADS</h1>
 			<img src="images/ads1.jpg" class="ads">
@@ -74,7 +80,10 @@
 			<img src="images/ads2.jpg" class="ads">
 		</div>
 
+		<!-- link javascript file that handles DOM -->
 		<script type="text/javascript" src="./form.js"></script>
+
+		<!-- add styling -->
 		<link rel="stylesheet" type="text/css" href="index.css">
 		
 	</body>
